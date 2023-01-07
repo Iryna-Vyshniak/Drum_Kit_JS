@@ -1,0 +1,114 @@
+html {
+    font-size: 10px;
+    //background: url() bottom center;
+    //background-size: cover;
+}
+
+body,
+html {
+    font-family: 'Montserrat', serif;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+        width: $mobile;
+    }
+
+    @include tablet {
+        width: $tablet;
+    }
+
+    @include desktop {
+        width: $desktop;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: .0625rem;
+    height: .0625rem;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -0.0625rem;
+}
+
+.keys {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    gap: .625rem;
+
+    max-width: 800px;
+
+    transform: translate(-50%, -50%);
+    overflow: visible;
+}
+
+.key {
+    position: relative;
+    display: block;
+    margin-right: .625rem;
+    //width: calc($index * $side);
+    //height: calc($index * $side);
+    width: 3.125rem;
+    height: 3.125rem;
+
+    color: #babecc;
+    text-shadow: .0313rem .0313rem .0625rem rgb(54, 54, 54);
+    background: #d9dbec;
+    border-radius: .375rem;
+    border-bottom: .3125rem solid #848484;
+    border-right: .1875rem solid #c2c0c1;
+    box-shadow: -0.125rem .375rem .25rem 0rem rgba(0, 0, 0, 0.2), 0 .125rem .0625rem .0625rem rgba(0, 0, 0, 0.8), inset -0.125rem 0rem .0625rem 0 rgba(255, 255, 255, 0.7), inset 0 -0.0625rem .0625rem 0 #848484, inset 0 0 .125rem .0625rem rgba(0, 0, 0, 0.2);
+
+    text-decoration: none;
+    transition: all .07s ease;
+
+    &:hover {
+        margin-top: .1875rem;
+        background: #fdfd5c;
+        box-shadow: -0.0625rem .125rem .125rem 0rem rgba(0, 0, 0, 0), 0 -0.0625rem .0625rem .0625rem rgba(0, 0, 0, 0.8), inset -0.125rem 0rem .0625rem 0 rgba(255, 255, 255, 0.7), inset 0 0 .125rem .0625rem rgba(0, 0, 0, 0.2);
+        border-bottom: .1875rem solid #848484;
+        border-right: .125rem solid #c2c0c1;
+        color: #74a8db;
+        text-shadow: .5008px .5008px 1px rgb(0, 14, 137);
+    }
+
+}
+
+.key-space {
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    &:hover {
+        background: transparent;
+    }
+}
+
+kbd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin: -1.25rem 0 0 -1.125rem;
+    width: 2.25rem;
+    height: 1.625rem;
+
+    text-align: center;
+    font-size: 2rem;
+}
