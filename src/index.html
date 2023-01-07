@@ -3,9 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Drum Kit</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <section>
+      <div class="container">
+        <h2 class="visually-hidden">Drum Kit</h2>
+        <ul class="keys">
+          <li class="key" data-key="71"><kbd>G</kbd></li>
+          <li class="key" data-key="76"><kbd>l</kbd></li>
+          <li class="key" data-key="79"><kbd>o</kbd></li>
+          <li class="key" data-key="82"><kbd>r</kbd></li>
+          <li class="key" data-key="89"><kbd>y</kbd></li>
+          <li class="key key-space" data-key="32"><kbd></kbd></li>
+          <li class="key" data-key="84"><kbd>t</kbd></li>
+          <li class="key" data-key="79"><kbd>o</kbd></li>
+          <li class="key key-space" data-key="32"><kbd></kbd></li>
+          <li class="key" data-key="85"><kbd>U</kbd></li>
+          <li class="key" data-key="75"><kbd>k</kbd></li>
+          <li class="key" data-key="82"><kbd>r</kbd></li>
+          <li class="key" data-key="65"><kbd>a</kbd></li>
+          <li class="key" data-key="73"><kbd>i</kbd></li>
+          <li class="key" data-key="78"><kbd>n</kbd></li>
+          <li class="key" data-key="69"><kbd>e</kbd></li>
+        </ul>
+        <audio class="sound" data-key="71" src="./sounds/g.wav"></audio>
+        <audio class="sound" data-key="76" src="./sounds/l.wav"></audio>
+        <audio class="sound" data-key="79" src="./sounds/o.wav"></audio>
+        <audio class="sound" data-key="82" src="./sounds/r.wav"></audio>
+        <audio class="sound" data-key="89" src="./sounds/y.wav"></audio>
+        <audio class="sound" data-key="32" src="./sounds/space.wav"></audio>
+        <audio class="sound" data-key="84" src="./sounds/t.wav"></audio>
+        <audio class="sound" data-key="79" src="./sounds/o.wav"></audio>
+        <audio class="sound" data-key="32" src="./sounds/space.wav"></audio>
+        <audio class="sound" data-key="85" src="./sounds/U.wav"></audio>
+        <audio class="sound" data-key="75" src="./sounds/k.wav"></audio>
+        <audio class="sound" data-key="82" src="./sounds/r.wav"></audio>
+        <audio class="sound" data-key="65" src="./sounds/a.wav"></audio>
+        <audio class="sound" data-key="73" src="./sounds/i.wav"></audio>
+        <audio class="sound" data-key="78" src="./sounds/n.wav"></audio>
+        <audio class="sound" data-key="69" src="./sounds/e.wav"></audio>
+      </div>
+    </section>
+    <script type="module" src="./index.js"></script>
+  </body>
 </html>
