@@ -41,34 +41,46 @@ html {
     margin: -0.0625rem;
 }
 
-.keys {
+.keyboard {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-54%, -50%);
 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.keys {
     display: flex;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
-    gap: .625rem;
+    gap: 7px;
 
     max-width: 800px;
-
-    transform: translate(-50%, -50%);
     overflow: visible;
+
+    @include tablet {
+        gap: 10px;
+    }
+
+    @include desktop {
+        gap: 15px;
+    }
 }
 
 .key {
     position: relative;
     display: block;
     margin-right: .625rem;
-    //width: calc($index * $side);
-    //height: calc($index * $side);
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 3rem;
+    height: 3rem;
 
     color: #babecc;
-    text-shadow: .0313rem .0313rem .0625rem rgb(54, 54, 54);
+    text-shadow: .0313rem .0313rem .0625rem rgb(54, 54, 54), -.0313rem -.0313rem .0625rem rgb(255, 255, 255);
     background: #d9dbec;
     border-radius: .375rem;
     border-bottom: .3125rem solid #848484;
@@ -76,7 +88,17 @@ html {
     box-shadow: -0.125rem .375rem .25rem 0rem rgba(0, 0, 0, 0.2), 0 .125rem .0625rem .0625rem rgba(0, 0, 0, 0.8), inset -0.125rem 0rem .0625rem 0 rgba(255, 255, 255, 0.7), inset 0 -0.0625rem .0625rem 0 #848484, inset 0 0 .125rem .0625rem rgba(0, 0, 0, 0.2);
 
     text-decoration: none;
-    transition: all .07s ease;
+    transition: all .01s ease;
+
+    @include tablet {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    @include desktop {
+        width: 5rem;
+        height: 5rem;
+    }
 
     &:hover {
         margin-top: .1875rem;
@@ -84,8 +106,8 @@ html {
         box-shadow: -0.0625rem .125rem .125rem 0rem rgba(0, 0, 0, 0), 0 -0.0625rem .0625rem .0625rem rgba(0, 0, 0, 0.8), inset -0.125rem 0rem .0625rem 0 rgba(255, 255, 255, 0.7), inset 0 0 .125rem .0625rem rgba(0, 0, 0, 0.2);
         border-bottom: .1875rem solid #848484;
         border-right: .125rem solid #c2c0c1;
-        color: #74a8db;
-        text-shadow: .5008px .5008px 1px rgb(0, 14, 137);
+        color: #2f97ff;
+        text-shadow: .5008px .5008px 0.5px rgb(1, 7, 65), -.0313rem -.0313rem .0313rem rgb(255, 255, 255);
     }
 
 }
@@ -104,11 +126,19 @@ kbd {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-25%, -5%);
     display: block;
     margin: -1.25rem 0 0 -1.125rem;
-    width: 2.25rem;
-    height: 1.625rem;
+    width: 36px;
+    height: 26px;
 
     text-align: center;
     font-size: 2rem;
+
+    @include desktop {
+        transform: translate(-35%, -30%);
+        width: 56px;
+        height: 46px;
+        font-size: 4rem;
+    }
 }
