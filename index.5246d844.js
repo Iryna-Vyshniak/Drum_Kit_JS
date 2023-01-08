@@ -1,0 +1,2 @@
+!function(){function e(e){"margin-top"===e.propertyName&&e.target.classList.remove("playing")}Array.from(document.querySelectorAll(".key")).forEach((function(t){return t.addEventListener("transitionend",e)})),window.addEventListener("keydown",(function(e){var t=document.querySelector('audio[data-key="'.concat(e.keyCode,'"]')),n=document.querySelector('li[data-key="'.concat(e.keyCode,'"]'));t&&(n.classList.add("playing"),t.currentTime=0,t.play())}))}();
+//# sourceMappingURL=index.5246d844.js.map
