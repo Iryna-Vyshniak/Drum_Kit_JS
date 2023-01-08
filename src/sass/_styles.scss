@@ -70,13 +70,12 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 20px;
-
     width: 80vw;
 }
 
 .keys {
     display: flex;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     align-items: center;
     justify-content: space-between;
     gap: 7px;
@@ -95,6 +94,10 @@ ul {
     @include desktop {
         gap: 15px;
         margin-bottom: 40px;
+    }
+
+    @include desktop-xxlg {
+        margin-bottom: 0;
     }
 }
 
@@ -138,12 +141,14 @@ ul {
 
 .key {
     position: relative;
+    z-index: 10;
+
     display: block;
     width: 3rem;
     height: 3rem;
 
     color: #babecc;
-    text-shadow: 0.0313rem 0.0313rem 0.0625rem rgb(54, 54, 54),
+    text-shadow: 0.0313rem .5008px 0.0625rem rgb(54, 54, 54),
         -0.0313rem -0.0313rem 0.0625rem rgb(255, 255, 255);
     // background-image: url('../images/cream-paper.png'),
     //     linear-gradient(to bottom, #d7dbfa 10%, #ffffff 60%);
@@ -161,7 +166,7 @@ ul {
         inset 0 0 0.125rem 0.0625rem rgba(0, 0, 0, 0.2);
 
     text-decoration: none;
-    transition: all 0.01s ease;
+    //transition: all 0.01s ease;
     backdrop-filter: blur(7px);
 
     @include tablet {
@@ -229,6 +234,8 @@ kbd {
     top: 50%;
     left: 50%;
     transform: translate(-25%, -5%);
+    z-index: 10;
+
     display: block;
     margin: -1.25rem 0 0 -1.125rem;
     width: 36px;

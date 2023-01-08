@@ -60,3 +60,9 @@ $desktop: 1200px;
         @content;
     }
 }
+
+@mixin desktop-xxlg {
+    @media screen and (min-width: 2438px) {
+        @content;
+    }
+}
