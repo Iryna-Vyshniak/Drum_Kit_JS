@@ -1,2 +1,0 @@
-function e(e){"margin-top"===e.propertyName&&e.target.classList.remove("playing")}Array.from(document.querySelectorAll(".key")).forEach((t=>t.addEventListener("transitionend",e))),window.addEventListener("keydown",(function(e){const t=document.querySelector(`audio[data-key="${e.keyCode}"]`),n=document.querySelector(`li[data-key="${e.keyCode}"]`);t&&(n.classList.add("playing"),t.currentTime=0,t.play())}));
-//# sourceMappingURL=index.1aa97fd9.js.map
