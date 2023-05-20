@@ -26,12 +26,6 @@ When a drum key is pressed, the event listener listens for the CSS transition
 property to end. With the event listener implemented, each drum key displays the
 transition, plays a drum sound and returns to its original state automatically.
 
-[![Image from Gyazo](https://i.gyazo.com/d970ba3f1faf17a06eef72c12fdfb824.jpg)](https://gyazo.com/d970ba3f1faf17a06eef72c12fdfb824)
-
-[![Image from Gyazo](https://i.gyazo.com/cd6da7591f3674421b56247d31c6ffd2.jpg)](https://gyazo.com/cd6da7591f3674421b56247d31c6ffd2)
-
-[![Image from Gyazo](https://i.gyazo.com/c4a2bbcfddf0c52f94a26e8db48393a9.png)](https://gyazo.com/c4a2bbcfddf0c52f94a26e8db48393a9)
-
-[![Image from Gyazo](https://i.gyazo.com/cc5bec34764422eb4c47bc10a7721228.gif)][def]
-
-[def]: https://gyazo.com/cc5bec34764422eb4c47bc10a7721228
+<div align="center">
+  <img src="https://ik.imagekit.io/irinavn2011/4.png?updatedAt=1684583128248" width="1200" height="auto"/>
+</div>
